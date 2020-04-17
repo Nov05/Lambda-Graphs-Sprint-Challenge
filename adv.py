@@ -38,10 +38,10 @@ traversal_path = []
 visited_rooms = {}
 exit = player.current_room.get_exits()[0] # a random possible exit
 
-while len(visited_rooms) < 500: # earlier stop
+while len(visited_rooms) < 500: # early stop
     # find new direction
     exits = player.current_room.get_exits() # get all possible exits
-    exit, next_room = change_direction(exit, 2), None
+    exit, entry, next_room = change_direction(exit, 2), None, None
     while exit not in exits or next_room is None \
     or (next_room.id in visited_rooms and visited_rooms[next_room.id] != entry):
         exit = change_direction(exit, 1)
