@@ -155,10 +155,7 @@ My best path is 957 moves. Can you find a shorter path?
 #                                                                                                                                                           #
 
 #####
-there is a loop at 121
-there is a loop at 123
-there is a loop at 6
-there is a loop at 23
-there is a loop at 0
-there is a loop at 1
+there is a loop at 121-123
+there is a loop at 6-23
+there is a loop at 0-1
 ```
